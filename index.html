@@ -18,9 +18,17 @@
         <div class="game" data-game>
 
         </div>
+        <button id="reload">Restart</button>
 
     </main>
 
+    <script>
+        const btnR = document.getElementById("reload");
+        btnR.addEventListener("click", function () {
+            console.log('foi')
+            window.location.reload();
+        });
+    </script>
     <script src="dist/js/index.js"></script>
 </body>
 

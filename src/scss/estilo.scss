@@ -5,13 +5,12 @@ html {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
+
 body {
   background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(170, 70, 252, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(170, 70, 252, 1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,10 +41,10 @@ main {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
   height: 420px;
-  gap: 20px;    
+  gap: 20px;
 }
 
-.card{
+.card {
   border-radius: 6px;
   transition: transform .2s;
   position: relative;
@@ -53,10 +52,10 @@ main {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-  box-shadow: 0 5px 7px -5px rgba(0,0,0,.5);
+  box-shadow: 0 5px 7px -5px rgba(0, 0, 0, .5);
 }
 
-.card img{
+.card img {
   border-radius: 6px;
   overflow: hidden;
   object-fit: cover;
@@ -64,13 +63,27 @@ main {
   height: 100%;
   position: absolute;
   border-radius: 5px;
-  backface-visibility: hidden;  
+  backface-visibility: hidden;
 }
-.card-front{
+
+.card-front {
   transform: rotateY(180deg);
 }
+
 .card.show {
   transform: rotateY(180deg);
 }
 
+#reload {
+  background-color: #ff4530;
+  border: solid 2px #a02f25;
+  width: 30%;
+  margin-top: 15px;
+  margin-left: 35%;
+  border-radius: 10px;
 
+}
+
+:hover#reload {
+  background-color: #c23528;
+}
